@@ -1,0 +1,51 @@
+from flask import Flask, render_template, request
+import json as js
+from authLogin import authLogin
+from authCreate import authCreate
+
+app = Flask(__name__)
+
+
+# Main page loading
+@app.route('/') 
+def home(): 
+    return render_template("login.html")
+
+@app.route('/login') 
+def login(): 
+    return render_template("login.html")
+
+@app.route('/create') 
+def create(): 
+    return render_template("create.html")
+
+# User Login
+@app.route('/logn', methods=['POST'])
+def logn():
+    name = request.form['name']
+    password = request.form['password']
+    if authLogin(name, password):
+        return render_template("home.html", name=name)
+    return render_template("login.html")
+
+
+
+@app.route('/creat', methods=['POST'])
+def creat():
+    name = str(request.form['name'])
+    password = str(request.form['password'])
+    if authCreate(name, password):
+        return render_template("home.html", name=name)
+    return render_template("create.html")
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
