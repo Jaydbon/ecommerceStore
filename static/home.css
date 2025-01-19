@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.dashboard {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dashboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.dashboard ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.dashboard ul li a:hover {
+    color: #007bff;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='create.css') }}">
+    </head>
+    <body>
+        <h1>Create Account</h1>
+        <form method="POST" action="/creat">
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="name">Password:</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Create">
+        </form>
+        <p>Already have an account? <a href="login">Login</a></p>
+    </body>
+</html>
