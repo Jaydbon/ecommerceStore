@@ -35,7 +35,7 @@ def creat():
     name = str(request.form['name'])
     password = str(request.form['password'])
     if authCreate(name, password):
-        return render_template("home.html", name=name)
+        return render_template("login.html")
     return render_template("create.html")
 
 
