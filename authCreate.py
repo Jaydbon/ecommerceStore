@@ -11,6 +11,8 @@ def authCreate(name, password):
     users.append(user)
     with open('users.json', 'w') as file:
         js.dump(users, file, indent=4)
-
+    file = open(f"{name}.json", "w")
+    file.write('[{"months":[]}]')
+    file.close()
 
     return True

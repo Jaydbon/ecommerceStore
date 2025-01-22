@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import json as js
 from authLogin import authLogin
 from authCreate import authCreate
+from money import monthlyIncome
 
 app = Flask(__name__)
 
@@ -25,7 +26,8 @@ def logn():
     name = request.form['name']
     password = request.form['password']
     if authLogin(name, password):
-        return render_template("home.html", name=name)
+        income, profit, gain = monthlyIncome(name)
+        return render_template("home.html", name=name, income=income, profit=profit, gain=gain)
     return render_template("login.html")
 
 

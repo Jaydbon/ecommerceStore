@@ -1,42 +1,6 @@
 [
     {
-        "username": "user1",
-        "password": "pass1"
-    },
-    {
-        "username": "user2",
-        "password": "pass2"
-    },
-    {
-        "username": "user3",
-        "password": "pass3"
-    },
-    {
-        "username": "sayen",
+        "username": "Jayden",
         "password": "1"
-    },
-    {
-        "username": "wingfung",
-        "password": "2"
-    },
-    {
-        "username": "8",
-        "password": "8"
-    },
-    {
-        "username": "5",
-        "password": "5"
-    },
-    {
-        "username": "7",
-        "password": "7"
-    },
-    {
-        "username": "jayden",
-        "password": "1"
-    },
-    {
-        "username": "ikbal",
-        "password": "25"
     }
 ]
