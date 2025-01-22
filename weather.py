@@ -25,7 +25,7 @@ def get_weather_forecast(city, api_key):
         print(f"Failed to fetch weather data: {response.status_code}, {response.text}")
 
 # Replace with your OpenWeatherMap API key
-API_KEY = "839f5f168106cb210a47885408533897"
+API_KEY = ""
 
 # Replace with the city of your choice
 city = "London"
