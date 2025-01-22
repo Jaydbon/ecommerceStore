@@ -23,29 +23,69 @@
     <div class="main">
         <div class="top-container">
             <div class="top">
-                <p>Total Profit</p>
+                <p class="title">Total Profit</p>
+                <p class="num">$3000</p>
+                <p class="numSmall">+1200</p>
         
             </div>
             <div class="top">
-                <p>Total Gains</p>
-        
+                <p class="title">Total Gains</p>
+                <p class="num">$1568</p>
+                <p class="numSmall" id="neg">-140</p>
             </div>
         </div>
         <div class="weather">
-            <p>Welcome {{name}}</p>
+            <p id="welcome">Welcome, {{name}}</p>
+            <div class="day-container">
+                <div class="day">
+                    <p class="temp">32°C</p>
+                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
+                    <p class="dayName">Sunday</p>
+                </div>
+                <div class="day">
+                    <p class="temp">32°C</p>
+                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
+                    <p class="dayName">Monday</p>
+                </div>
+                <div class="day">
+                    <p class="temp">32°C</p>
+                    <img src="{{ url_for('static', filename='images/rainy.svg') }}" alt="weather">
+                    <p class="dayName">Tuesday</p>
+                </div>
+                <div class="day">
+                    <p class="temp">32°C</p>
+                    <img src="{{ url_for('static', filename='images/rainy.svg') }}" alt="weather">
+                    <p class="dayName">Wednesday</p>
+                </div>
+                <div class="day">
+                    <p class="temp">32°C</p>
+                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
+                    <p class="dayName">Thursday</p>
+                </div>
+                <div class="day">
+                    <p class="temp">32°C</p>
+                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
+                    <p class="dayName">Friday</p>
+                </div>
+                <div class="day">
+                    <p class="temp">32°C</p>
+                    <img src="{{ url_for('static', filename='images/rainy.svg') }}" alt="weather">
+                    <p class="dayName">Saturday</p>
+                </div>
+            </div>
 
         </div>
-        <div class="bottom">
-            <p>Months Income</p>
-            <p>$10,000</p>
+        <div class="bottom" id="income">
+            <p class="title">Months Income</p>
+            <p class="sub" id="pos">$10,000</p>
         </div>
-        <div class="bottom">
-            <p>Months Spending</p>
-            <p>$2,500</p>
+        <div class="bottom" id="spending">
+            <p class="title">Months Spending</p>
+            <p class="sub"  id="neg">$2,500</p>
         </div>
-        <div class="bottom">
-            <p>Months Net Income</p>
-            <p>$7,500</p>
+        <div class="bottom" id="net">
+            <p class="title">Months Net Income</p>
+            <p class="sub"  id="mid">$7,500</p>
         </div>
         
 
