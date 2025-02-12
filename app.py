@@ -3,6 +3,7 @@ import json as js
 from authLogin import authLogin
 from authCreate import authCreate
 from money import monthlyIncome
+from weather import get_weather_forecast
 
 app = Flask(__name__)
 
@@ -27,7 +28,8 @@ def logn():
     password = request.form['password']
     if authLogin(name, password):
         income, profit, gain = monthlyIncome(name)
-        return render_template("home.html", name=name, income=income, profit=profit, gain=gain)
+        weatherData = get_weather_forecast()
+        return render_template("home.html", name=name, income=income, profit=profit, gain=gain, weatherData = weatherData)
     return render_template("login.html")
 
 

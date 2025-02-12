@@ -38,39 +38,29 @@
             <p id="welcome">Welcome, {{name}}</p>
             <div class="day-container">
                 <div class="day">
-                    <p class="temp">32°C</p>
-                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
-                    <p class="dayName">Sunday</p>
+                    <p class="temp">{{ weatherData[0][0] }}°C</p>
+                    <img src="{{ url_for('static', filename='images/'+weatherData[0][1]+'.svg') }}" alt="weather">
+                    <p class="dayName">{{ weatherData[0][2] }}</p>
                 </div>
                 <div class="day">
-                    <p class="temp">32°C</p>
-                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
-                    <p class="dayName">Monday</p>
+                    <p class="temp">{{ weatherData[1][0] }}°C</p>
+                    <img src="{{ url_for('static', filename='images/'+weatherData[1][1]+'.svg') }}" alt="weather">
+                    <p class="dayName">{{ weatherData[1][2] }}</p>
                 </div>
                 <div class="day">
-                    <p class="temp">32°C</p>
-                    <img src="{{ url_for('static', filename='images/rainy.svg') }}" alt="weather">
-                    <p class="dayName">Tuesday</p>
+                    <p class="temp">{{ weatherData[2][0] }}°C</p>
+                    <img src="{{ url_for('static', filename='images/'+weatherData[2][1]+'.svg') }}" alt="weather">
+                    <p class="dayName">{{ weatherData[2][2] }}</p>
                 </div>
                 <div class="day">
-                    <p class="temp">32°C</p>
-                    <img src="{{ url_for('static', filename='images/rainy.svg') }}" alt="weather">
-                    <p class="dayName">Wednesday</p>
+                    <p class="temp">{{ weatherData[3][0] }}°C</p>
+                    <img src="{{ url_for('static', filename='images/'+weatherData[3][1]+'.svg') }}" alt="weather">
+                    <p class="dayName">{{ weatherData[3][2] }}</p>
                 </div>
                 <div class="day">
-                    <p class="temp">32°C</p>
-                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
-                    <p class="dayName">Thursday</p>
-                </div>
-                <div class="day">
-                    <p class="temp">32°C</p>
-                    <img src="{{ url_for('static', filename='images/sunny.svg') }}" alt="weather">
-                    <p class="dayName">Friday</p>
-                </div>
-                <div class="day">
-                    <p class="temp">32°C</p>
-                    <img src="{{ url_for('static', filename='images/rainy.svg') }}" alt="weather">
-                    <p class="dayName">Saturday</p>
+                    <p class="temp">{{ weatherData[4][0] }}°C</p>
+                    <img src="{{ url_for('static', filename='images/'+weatherData[3][1]+'.svg') }}" alt="weather">
+                    <p class="dayName">{{ weatherData[4][2] }}</p>
                 </div>
             </div>
 
