@@ -31,7 +31,7 @@ def get_weather_forecast():
 
 
 # Call the function to get the weather forecast
-print(get_weather_forecast())
+# print(get_weather_forecast())
 
 
 
